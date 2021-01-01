@@ -1,0 +1,186 @@
+body{
+    font-family: Arial;
+    color:white;
+    background-color: #222;
+}
+.page-wrapper{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.wrapper{
+    width:100%;
+}
+.students{
+    width:100%;
+}
+.sidebar{
+    width:100%;
+}
+.classroom{
+    display:none;
+}
+.promo-2021{
+    display:block;
+}
+.intro{
+    width:100%;
+}
+
+h1{
+    text-align: center;
+    width:90%;
+    padding:10px;
+    background-color: #3498db;
+    margin:auto;
+    border-radius: 3px;
+}
+.tools{
+    width:100%;
+}
+.tools ul{
+    padding:0;
+}
+.tools ul li{
+    background-color: #375a7f;
+    padding:10px;
+    width:90%;
+    border-radius: 5px;
+}
+.tools ul li a{
+    display:block;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    width:100%;
+}
+ul{
+    padding:0;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around   ;
+}
+li{
+    text-align: center;
+    list-style: none;
+    width:50%;
+    margin-bottom:20px;
+    background-color: #303030;
+}
+.networks_links{
+    width:100%;
+    padding:0;
+}
+.networks_links li{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+.networks_links li a{
+    background-color: #2b4764;
+    color:white;
+    text-decoration: none;
+    display:flex;
+    width:30%;
+    padding:10px;
+    justify-content: center;
+    border-radius:2px;
+}
+.teachers .networks_links li a{
+    background-color: #dc3545;
+}
+li img{
+    border-radius: 5px;
+}
+footer{
+    width:100%;
+}
+.outro{
+    text-align: center;
+    color:white;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.outro p a{
+    color:#375a7f;
+}
+.miw_contact{
+    text-align: center;
+    color:white;
+    border:1px solid #303030;
+}
+.miw_contact ul{
+    display:flex;
+}
+.miw_contact ul li{
+    width:100%;
+    padding:20px;
+}
+.miw_contact ul li a{
+    color:#375a7f;
+    
+}
+
+@media screen and (min-width: 1024px){
+    .page-wrapper{
+        max-width: 100%;
+    }
+    h1{
+        max-width: 90%;
+        margin:auto;
+        padding:20px;
+    }
+    .tools{
+        width:25%;
+    }
+    .tools ul li{
+        width:25%;
+        padding:10px;
+    }
+    .students{
+        width:60%;
+    }
+    .sidebar{
+        width:20%;
+    }
+    .teachers ul li{
+        width:100%;
+    }
+    .tools{
+        width:100%;
+    }
+    ul{
+        justify-content: space-evenly;
+    }
+    li{
+        width:25%;
+        margin-bottom:20px;
+    }
+    .miw_contact ul li{
+        width:25%;
+        padding:20px;
+    }
+}
+
+@media (prefers-color-scheme: light){
+    body{
+        background-color: #fff;
+        color:black;
+    }
+    li{
+        background-color: #f8f9fa;
+    }
+    p{color:black;}
+    .miw_contact{
+        color:black;
+    }
+}
+
+@media print{
+    .sidebar, .footer, .tools, .networks_links{
+        display:none;
+    }
+
+}
